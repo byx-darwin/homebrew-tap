@@ -1,5 +1,5 @@
 cask "token-fleet-switch" do
-  version "1.0.2"
+  version "1.0.3"
 
   name "TokenFleet Switch"
   desc "AI gateway control panel — manage providers, models, and API channel chains"
@@ -12,7 +12,12 @@ cask "token-fleet-switch" do
 
   on_arm do
     url "https://github.com/byx-darwin/token-fleet-switch/releases/download/v#{version}/TokenFleet.Switch_#{version}_aarch64.dmg"
-    sha256 "3caa56f85af2be28fef0fef6a26f990e6fe1edd3bca17cd4672965f50180adda"
+    sha256 "382352f875fea4f4c1e2bc9f098a7ebfbd65c0378f394ed5c32494d813429b2b"
+  end
+
+  on_intel do
+    url "https://github.com/byx-darwin/token-fleet-switch/releases/download/v#{version}/TokenFleet.Switch_#{version}_x64.dmg"
+    sha256 "56bfa3d2aa57390ba9cc2f846ae779bc989f794c8e84432045e7d4212caa6e32"
   end
 
   app "TokenFleet Switch.app"
