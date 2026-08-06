@@ -2,22 +2,28 @@ class Tokenless < Formula
   desc "LLM token optimization toolkit — schema/response compression, command rewriting"
   homepage "https://github.com/byx-darwin/tokenless"
   license "Apache-2.0"
-  version "1.1.0"
+  version "1.1.2"
 
   on_macos do
     on_arm do
-      url "https://github.com/byx-darwin/tokenless/releases/download/v1.1.0/tokenless-aarch64-apple-darwin.tar.gz"
-      sha256 "63c7e548ba3ad57b85879e82ad81a144bc4dfd61393360dbb426bbe511d24a99"
+      url "https://github.com/byx-darwin/tokenless/releases/download/v1.1.2/tokenless-aarch64-apple-darwin.tar.gz"
+      sha256 "631f27ef3cdc223de05342db3167f85a20d225f8bfbc8ee75e7226a7f4419853"
     end
     on_intel do
-      url "https://github.com/byx-darwin/tokenless/releases/download/v1.1.0/tokenless-x86_64-apple-darwin.tar.gz"
-      sha256 "a3952963bb12be166bff36480b6d4c4d7ebb45b778c827c7be82c474058a491e"
+      url "https://github.com/byx-darwin/tokenless/releases/download/v1.1.2/tokenless-x86_64-apple-darwin.tar.gz"
+      sha256 "0ed64d1f7c5d0ea7a8d5a24c261fa75e3ceacd28b244aaefb6e0caaade00e61d"
     end
   end
 
   on_linux do
-    url "https://github.com/byx-darwin/tokenless/releases/download/v1.1.0/tokenless-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "9408d76dbbfbd906a78ec3af6922467b8cea5bf9c2e9a9d5bb872b571d7e43bc"
+    on_arm do
+      url "https://github.com/byx-darwin/tokenless/releases/download/v1.1.2/tokenless-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "e50656cd9fe941f54a21a4ecb1bacf42ebf7faf3d3d11317aa6a646cd33065af"
+    end
+    on_intel do
+      url "https://github.com/byx-darwin/tokenless/releases/download/v1.1.2/tokenless-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "87c3039baf350f0d40f48f4b590123cfcf0422065488e52f901854c1a47e4445"
+    end
   end
 
   def install
