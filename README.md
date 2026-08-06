@@ -1,13 +1,13 @@
-# Homebrew Tap for TokenFleet-AI
+# Homebrew Tap for byx-darwin
 
-Homebrew formulae and casks for [TokenFleet-AI](https://github.com/TokenFleet-AI) tools.
+Homebrew formulae and casks for [byx-darwin](https://github.com/byx-darwin) tools.
 
 [中文文档](README.zh.md)
 
 ## Quick Start
 
 ```bash
-brew tap TokenFleet-AI/tap
+brew tap byx-darwin/tap
 
 # CLI tools
 brew install tokenless
@@ -83,7 +83,7 @@ brew upgrade --cask token-fleet-switch
 
 1. Download the new checksums:
    ```bash
-   curl -sL https://github.com/TokenFleet-AI/tokenless/releases/download/vX.Y.Z/checksums.txt
+   curl -sL https://github.com/byx-darwin/tokenless/releases/download/vX.Y.Z/checksums.txt
    ```
 2. Update `version`, `url`, and `sha256` in `Formula/tokenless.rb`
 3. Commit and push to `main`

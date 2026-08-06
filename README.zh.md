@@ -1,13 +1,13 @@
-# TokenFleet-AI Homebrew Tap
+# byx-darwin Homebrew Tap
 
-[TokenFleet-AI](https://github.com/TokenFleet-AI) 工具的 Homebrew 软件包。
+[byx-darwin](https://github.com/byx-darwin) 工具的 Homebrew 软件包。
 
 [English](README.md)
 
 ## 快速开始
 
 ```bash
-brew tap TokenFleet-AI/tap
+brew tap byx-darwin/tap
 
 # CLI 工具
 brew install tokenless
@@ -83,7 +83,7 @@ brew upgrade --cask token-fleet-switch
 
 1. 下载新版本的校验和：
    ```bash
-   curl -sL https://github.com/TokenFleet-AI/tokenless/releases/download/vX.Y.Z/checksums.txt
+   curl -sL https://github.com/byx-darwin/tokenless/releases/download/vX.Y.Z/checksums.txt
    ```
 2. 更新 `Formula/tokenless.rb` 中的 `version`、`url` 和 `sha256`
 3. 提交并推送到 `main`
